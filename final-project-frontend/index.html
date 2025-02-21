@@ -8,6 +8,7 @@
         <title>Final Project :: Home</title>
         <link rel="stylesheet" type="text/css" href="FinalCSS.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <script src="scripts/scripts.js"></script>
     </head>
 </head>
 <body>
@@ -19,12 +20,17 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="add_course.html">Add A Course</a></li>
                 <li><a href="courses.html">Your Courses</a></li>
             </ul>
         </nav>
     </div>
+    <h1>All Courses</h1>
+    <ul>
+        <div id="list_of_courses"></div>
+    </ul>
 
+<!--
 <ul>
     <li><a href="#math">Mathematics</a></li>
     <li><a href="#science">Science</a></li>
@@ -57,8 +63,9 @@
     <h2>Computer Science</h2>
     <p>This course covers programming, data structures, and algorithms.</p>
 </div>
-
-<script>
+-->
+<!--
+    <script>
     function showSection() {
         let hash = window.location.hash.substring(1); // Get the part after #
         let sections = document.querySelectorAll('.course-section');
@@ -74,6 +81,8 @@
     window.addEventListener('hashchange', showSection);
     window.addEventListener('load', showSection);
 </script>
+-->
+
 
 </body>
 </html>
