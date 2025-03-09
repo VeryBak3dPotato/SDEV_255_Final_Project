@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final Project for Group 4">
+    <title>Courses | Login</title>
+    <link rel="stylesheet" type="text/css" href="FinalCSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="scripts/login.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="all_courses.html">Courses For College</a></h1>
+    </header>
+    
+    <h1 style="text-align: center;">Sign in to Your Account Here</h1>
+
+    <form id="login" autocomplete="off">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <button id="loginBtn" type="button">Login</button>
+        <div id="errorMsg"></div>
+        <p>
+            Not Registered?<br><a href="registration.html">Click Here to Register</a>
+        </p>
+    </form>
+
+</body>
+</html>

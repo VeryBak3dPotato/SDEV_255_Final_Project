@@ -1,0 +1,398 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 20px auto;
+    text-align: center;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    max-width: 600px;
+    background: white;
+    padding: 15px 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1{
+    font-weight: 600;
+}
+
+p,
+li,
+a {
+    font-weight: 400;
+}
+
+header {
+    background: #3a3a3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #dcdcdc;
+}
+
+#courseBtn {
+    padding: 10px
+}
+
+#adminBtns {
+    display: flex;
+    justify-content: center;
+}
+
+#editBtn {
+    background: #202bc3;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 20%;
+    margin: auto;
+}
+
+#editBtn a {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+#editBtn:hover {
+    background: #0b0f45;
+    transition-duration: 0.3s;
+}
+
+#deleteCourseBtn {
+    background: #c32033;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 20%;
+    margin: auto;
+}
+
+#deleteCourseBtn a {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+#deleteCourseBtn:hover {
+    background: #480c13;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#errorMsg {
+    padding: 15px 20px;
+    background: #fc98a4;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #333;
+}
+
+#list_of_courses li,
+#addedCourses li {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+#list_of_courses p,
+#addedCourses p {
+    background: white;
+    padding: 15px 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+#login,
+#register,
+#editForm,
+#addForm,
+#deleteForm,
+#cartForm {
+    padding: 20px;
+    width: 40%;
+    margin: auto;
+}
+
+#login div,
+#register div,
+#editForm div,
+#addForm div,
+#deleteForm select,
+#cartForm select {
+    margin-bottom: 15px;
+}
+
+#login label,
+#register label,
+#editForm label,
+#addForm label,
+#deleteForm label,
+#cartForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#login input,
+#register input,
+#editForm input,
+#addForm input,
+#deleteForm select,
+#cartForm select {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#navbar {
+    background: #4a4a4a;
+    padding: 10px;
+    text-align: center;
+}
+
+#navbar nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+#navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#navbar a,
+#navbar button {
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+#navbar a:hover,
+#navbar button:hover {
+    background: #5a5a5a;
+}
+
+#navbar button {
+    background: #4a4a4a;
+    position: absolute;
+    right: 20px;
+}
+
+#loginBtn,
+#regBtn,
+#updateBtn,
+#addBtn,
+#deleteBtn,
+#addCartBtn {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #4a4a4a;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addBtn,
+#addCartBtn {
+    background-color: #116f21;
+}
+
+#addBtn:hover,
+#addCartBtn:hover {
+    background-color: #0c3e14;
+}
+
+#deleteBtn {
+    background-color: #c32033;
+}
+
+#deleteBtn:hover {
+    background-color: #480c13;
+}
+
+#loginBtn:hover,
+#regBtn:hover,
+#updateBtn:hover {
+    background-color: #5a5a5a;
+}
+
+#roleDropdown {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#roleDropdown:hover {
+    background-color: #f0f0f0;
+}
+
+#coursesList {
+    margin: 0px 50px 0px 50px;
+}
+
+#coursesList ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#coursesList li {
+    display: block;
+    background: #3d3d3d;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#coursesList a {
+    text-decoration: none;
+    color: white;
+    padding: 2.5px 2.5px;
+    transition: 0.3s;
+}
+
+#coursesList a:hover {
+    background: #5d5d5d;
+    cursor: pointer;
+}
+
+.class-container {
+    width: 90%;
+}
+
+.course-section {
+    display: none;
+    background: white;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #666;
+}
+
+.course-section.active {
+    display: block;
+}
+
+.course-section h2 {
+    color: #444;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.details-container {
+    width: 60%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    #navbar nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+    #navbar li {
+        margin: 10px 0;
+    }
+
+    #navbar a,
+    #navbar button {
+        width: 80%;
+        display: block;
+        text-align: center;
+    }
+
+    #navbar button {
+        position: relative;
+    }
+
+    p {
+        max-width: 80%;
+    }
+
+    .course-section {
+        width: 90%;
+        padding: 15px;
+    }
+}
